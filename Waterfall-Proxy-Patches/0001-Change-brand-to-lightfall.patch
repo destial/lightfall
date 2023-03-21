@@ -529,7 +529,7 @@ index e0fcd8fb..e5c97051 100644
      public String getName()
      {
 -        return "Waterfall";
-+        return "lightfall";
++        return "SGC Network";
      }
  
      @Override
@@ -555,7 +555,7 @@ index b26035cf..d7d0ed58 100644
      public void execute(CommandSender sender, String[] args)
      {
 -        sender.sendMessage( ChatColor.BLUE + "This server is running Waterfall version " + ProxyServer.getInstance().getVersion() + " by md_5" );
-+        sender.sendMessage( ChatColor.BLUE + "This server is running lightfall version " + ProxyServer.getInstance().getVersion() + " by md_5" );
++        sender.sendMessage( ChatColor.BLUE + "This server is running version " + ProxyServer.getInstance().getVersion() + " by destiall" );
      }
  }
 diff --git a/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java b/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
@@ -567,7 +567,7 @@ index 0dd69778..2c3381f7 100644
              String name = entry.getKey();
              String addr = get( "address", "localhost:25565", val );
 -            String motd = ChatColor.translateAlternateColorCodes( '&', get( "motd", "&1Just another Waterfall - Forced Host", val ) );
-+            String motd = ChatColor.translateAlternateColorCodes( '&', get( "motd", "&1This server has super lightfall power - Forced Host", val ) );
++            String motd = ChatColor.translateAlternateColorCodes( '&', get( "motd", "&1SGC Network - Forced Host", val ) );
              boolean restricted = get( "restricted", false, val );
              SocketAddress address = Util.getAddr( addr );
              ServerInfo info = ProxyServer.getInstance().constructServerInfo( name, address, motd, restricted );
