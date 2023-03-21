@@ -132,9 +132,9 @@ index 80a16f65..5e016bf4 100644
 +                    reader = ARCLIGHT_WRAP;
 +                } else
 +                // lightfall - end
-                 if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_19_3 )
+                 if ( protocolVersion >= ProtocolConstants.MINECRAFT_1_19_4 )
                  {
-                     reader = IDS_1_19_3[(Integer) key];
+                     reader = IDS_1_19_4[(Integer) key];
 @@ -718,7 +788,7 @@ public class Commands extends DefinedPacket
  
              Preconditions.checkArgument( reader != null, "No provider for argument " + key );
